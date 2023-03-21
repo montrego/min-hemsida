@@ -1,0 +1,84 @@
+/* Reset */
+html, body, header, main, section, nav, ul, li, a, p, h1, h2, footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typografi */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
