@@ -114,3 +114,110 @@ footer {
   line-height: 1.5;
   color: #666;
 }
+
+/* Bakgrundsfärg och typsnitt */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Rubriker */
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Länkade knappar */
+button, a.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling av sektioner */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Formulär */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #333333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #008CBA;
+}
