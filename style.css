@@ -50,7 +50,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 300px; /* här ändrar du höjden till 600px */
   display: flex;
   flex-direction: column;
   align-items: center;
