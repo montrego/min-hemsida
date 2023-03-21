@@ -1,48 +1,41 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 1rem 0;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ddd;
-}
-
-#header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  z-index: 100;
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
 }
 
 header {
@@ -50,7 +43,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px; /* här ändrar du höjden till 600px */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,66 +53,64 @@ header {
   padding: 0 2rem;
 }
 
-
-
 header h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 section {
-    padding: 4rem 2rem;
-    text-align: center;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 section p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
 }
 
 .service-card {
-    display: inline-block;
-    width: calc(33.333% - 2rem);
-    margin-bottom: 2rem;
-    padding: 1rem;
+  display: inline-block;
+  width: calc(33.333% - 2rem);
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .service-card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-card p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 section#contact {
-    background-color: #f4f4f4;
-    padding-bottom: 2rem;
+  background-color: #f4f4f4;
+  padding-bottom: 2rem;
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
