@@ -1,110 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-  margin: 0;
-}
-
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-image-url');
-  background-size: cover;
-  background-position: center;
-  padding: 4rem 0;
-  color: white;
-  text-align: center;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem 0;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  padding: 1rem 0;
+    display: flex;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
+nav ul li {
+    list-style: none;
+    margin-right: 1rem;
 }
 
-nav a:hover {
-  color: #ccc;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-#about {
-  padding: 4rem 0;
-  text-align: center;
+nav ul li a:hover {
+    color: #ddd;
 }
 
-#about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+header {
+    background-image: url("images/hero-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
 }
 
-#about p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
 }
 
-#services {
-  padding: 4rem 0;
-  text-align: center;
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-#services h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 }
 
 .service-card {
-  display: inline-block;
-  width: 300px;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .service-card img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .service-card h3 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-}
-
-.service-card p {
-  font-size: 1.1rem;
-}
-
-#contact {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#contact p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
