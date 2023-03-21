@@ -107,3 +107,56 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/* Styla formuläret för att anpassa till hemsidan */
+iframe {
+  border: none;
+  width: 100%;
+  max-width: 800px;
+  height: 1000px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Justera färgerna på formuläret för att matcha hemsidan */
+.freebirdFormviewerViewFormContentWrapper {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.freebirdFormviewerViewHeaderCard {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.freebirdFormviewerViewFormCard {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.freebirdMaterialHeaderbannerTextContainer {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styla skicka-knappen */
+.freebirdFormviewerViewNavigationSubmitButton,
+.freebirdMaterialButtonbaseLabel {
+  background-color: #2980b9;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.freebirdFormviewerViewNavigationSubmitButton:hover,
+.freebirdMaterialButtonbaseLabel:hover {
+  background-color: #34495e;
+}
