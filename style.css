@@ -42,57 +42,61 @@ button:hover {
 /* Header */
 header {
     background-color: #333;
-    color: white;
-    padding: 1.5rem 0;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
 }
 
 /* Navigationsmeny */
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #444;
+    align-items: center;
     padding: 1rem 0;
 }
 
-nav a {
+.logo h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.menu a {
     color: white;
     text-decoration: none;
     padding: 0.5rem;
     font-size: 1.1rem;
 }
 
-nav a:hover {
+.menu a:hover {
     background-color: #555;
     transition: background-color 0.3s;
 }
 
 /* Hero-sektion */
 .hero {
-    background-color: #f4f4f4;
-    padding: 2rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-image-url');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    color: white;
+    text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* Tjänster-sektion */
 .services {
     padding: 4rem 0;
+    text-align: center;
 }
 
 .services h2 {
     font-size: 2.5rem;
-    text-align: center;
     margin-bottom: 3rem;
 }
 
