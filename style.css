@@ -1,114 +1,134 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset styles */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 1rem 0;
+/* Global styles */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav ul {
-    display: flex;
+a {
+  color: #337ab7;
+  text-decoration: none;
 }
 
-nav ul li {
-    list-style: none;
-    margin-right: 1rem;
+a:hover {
+  color: #23527c;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ddd;
-}
-
-header {
-    background-image: url("images/hero-background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 2rem;
-}
-
-header h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-section {
-    padding: 4rem 2rem;
-    text-align: center;
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 15px;
 }
 
-section p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
+h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
-.service-card {
-    display: inline-block;
-    width: calc(33.333% - 2rem);
-    margin-bottom: 2rem;
-    padding: 1rem;
+p {
+  margin-bottom: 20px;
 }
 
-.service-card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.service-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+/* Header styles */
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
-.service-card p {
-    font-size: 1rem;
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
-section#contact {
-    background-color: #f4f4f4;
-    padding-bottom: 2rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Hero section styles */
+
+#hero {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24
