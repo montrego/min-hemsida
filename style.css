@@ -82,3 +82,35 @@ footer {
   box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
+
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.image-text {
+  text-align: center;
+}
+
+.image-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.image-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
