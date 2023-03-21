@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corporate Housing Solutions</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Corporate Housing Solutions</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section id="home" class="hero">
-    <h1>Corporate Housing Solutions</h1>
-    <p>World-class furnished apartments for businesses</p>
-  </section>
-  
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Our company is dedicated to providing high-quality corporate housing solutions for businesses worldwide. We believe in creating comfortable and luxurious accommodations for our clients, helping them focus on their work and achieve success.</p>
-  </section>
-  
-  <section id="services">
-    <h2>Services</h2>
-    <div class="service-card">
-      <img src="service-1.jpg" alt="Service 1">
-      <h3>Service 1</h3>
-      <p>Description of service 1.</p>
-    </div>
-    <!-- Add more service cards here -->
-  </section>
-  
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to inquire about our services, please feel free to get in touch with us.</p>
-  </section>
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Corporate Housing Solutions</h1>
+        <p>Providing world-class corporate accommodations</p>
+        <img src="images/hero-background.jpg" alt="Hero background">
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading provider of furnished apartments for businesses. Our mission is to offer the best possible housing solutions for companies and their employees.</p>
+        <img src="images/about-us.jpg" alt="About Us">
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <img src="images/service-1.jpg" alt="Service 1">
+            <h3>Service 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
+        </div>
+        <div class="service-card">
+            <img src="images/service-2.jpg" alt="Service 2">
+            <h3>Service 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
+        </div>
+        <div class="service-card">
+            <img src="images/service-3.jpg" alt="Service 3">
+            <h3>Service 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to book one of our services, please get in touch with us using the contact form below.</p>
+        <img src="images/contact.jpg" alt="Contact">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Corporate Housing Solutions &copy; 2023. All rights reserved.</p>
+    </footer>
 </body>
 </html>
