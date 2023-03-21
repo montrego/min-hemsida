@@ -4,49 +4,47 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background: url('background-image.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-header {
-  background-color: #333;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-}
-
-nav {
+header nav ul {
   display: flex;
-  justify-content: space-around;
-  background-color: #4CAF50;
-  padding: 1rem;
+  list-style-type: none;
+  padding: 0;
 }
 
-nav a {
-  color: #ffffff;
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  color: #fff;
 }
 
-nav a:hover {
-  background-color: #45a049;
+.intro {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  color: #fff;
 }
 
-main {
-  padding: 2rem;
+.services {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
-h1, h2 {
-  color: #4CAF50;
+.contact {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
 }
 
 footer {
-  background-color: #333;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 10px;
 }
