@@ -124,3 +124,76 @@ footer {
 footer p {
   font-size: 14px;
 }
+
+/* För skärmar som är 600px eller större */
+@media only screen and (min-width: 600px) {
+  header {
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    margin-top: 40px;
+  }
+}
+
+/* För skärmar som är mindre än 600px */
+@media only screen and (max-width: 600px) {
+  header {
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .menu-icon img {
+    width: 40px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  nav ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
