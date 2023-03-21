@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Corporate Housing Solutions</title>
-</head>
-<body>
-    <header id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Corporate Housing Solutions</h1>
-        <p>Providing world-class corporate accommodations</p>
-        <img src="images/hero-background.jpg" alt="Hero background">
-    </header>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a leading provider of furnished apartments for businesses. Our mission is to offer the best possible housing solutions for companies and their employees.</p>
-        <img src="images/about-us.jpg" alt="About Us">
-    </section>
-    
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <img src="images/service-1.jpg" alt="Service 1">
-            <h3>Service 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
-        </div>
-        <div class="service-card">
-            <img src="images/service-1.jpg" alt="Service 2">
-            <h3>Service 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
-        </div>
-        <div class="service-card">
-            <img src="images/service-1.jpg" alt="Service 3">
-            <h3>Service 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, hic!</p>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or want to book one of our services, please get in touch with us using the contact form below.</p>
-        <img src="images/contact.jpg" alt="Contact">
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 
-    <footer>
-        <p>Corporate Housing Solutions &copy; 2023. All rights reserved.</p>
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Corporate Housing Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="home">
+    <div class="container">
+      <h1>Corporate Housing Solutions</h1>
+      <p>Your home away from home</p>
+      <a href="#services" class="btn">Learn more</a>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="images/service1.jpg" alt="Service 1">
+        <h3>Furnished Apartments</h3>
+        <p>Our fully furnished apartments come with all the amenities of home.</p>
+      </div>
+      <div class="service">
+        <img src="images/service2.jpg" alt="Service 2">
+        <h3>Relocation Services</h3>
+        <p>We offer relocation services to help make your move as smooth as possible.</p>
+      </div>
+      <div class="service">
+        <img src="images/service3.jpg" alt="Service 3">
+        <h3>Short-Term Leases</h3>
+        <p>Our short-term leases are perfect for those on temporary assignments.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Corporate Housing Solutions has been providing top-quality corporate housing for over 20 years. We pride ourselves on our exceptional customer service and attention to detail.</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
 </body>
+
 </html>
