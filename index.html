@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Apartments</title>
-  <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://kit.fontawesome.com/8f70e5b7e5.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Min hemsida</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
+
+			    var target = this.hash;
+			    var $target = $(target);
+
+			    $('html, body').animate({
+			        'scrollTop': $target.offset().top-80
+			    }, 1000, 'swing');
+			});
+		});
+	</script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Business Apartments</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" class="btn btn-primary">Book now</a></li>
-      </ul>
-    </nav>
-  </header>
+	<header>
+		<h1>Min hemsida</h1>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+	<main>
+		<section id="hero">
+			<h1>Welcome to My Website</h1>
+			<button><a href="#contact">Book now</a></button>
+		</section>
+		<section id="about">
+			<h2>About</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis quis elit rutrum dictum. Quisque mollis tellus a ipsum ultrices, at auctor justo dictum. Praesent sit amet dolor tortor.</p>
+		</section>
+		<section id="services">
+			<h2>Services</h2>
+			<ul>
+				<li>Web Design</li>
+				<li>Graphic Design</li>
+				<li>SEO</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form action="https://formspree.io/f/mjvpbkov" method="POST">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your name" required>
 
-  <!-- Main -->
-  <main>
-    <section id="hero">
-      <h1>Welcome to Business Apartments</h1>
-      <p>Enjoy a comfortable stay at one of our fully furnished apartments. Ideal for business trips and vacations. Book now and get 10% off your first stay.</p>
-      <a href="#" class="btn btn-primary">Book now</a>
-    </section>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="_replyto" placeholder="Your email" required>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna euismod, pretium nulla at, congue ex. Donec aliquet odio sit amet est sollicitudin, vel ultricies mi feugiat. Fusce dapibus blandit dolor vel venenatis. Curabitur volutpat vel nulla a vulputate. Morbi nec risus sapien. Etiam pharetra mauris non leo molestie, non vestibulum nibh dapibus. Vestibulum at faucibus velit. Integer quis tellus turpis. Suspendisse vitae facilisis eros.</p>
-      <p>Etiam in purus ut sapien tempus vulputate. Sed sit amet nisl eleifend, semper nibh ac, tristique metus. Sed vestibulum velit eu metus malesuada, ac congue quam pellentesque. Ut sed ipsum eget enim ultrices iaculis a vel justo. Sed sagittis magna nec enim maximus, ut bibendum arcu pharetra. Nam a nibh lectus. In venenatis finibus elit sed dapibus.</p>
-    </section>
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Your message" required></textarea>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li><i class="fas fa-check"></i> Free Wi-Fi</li>
-        <li><i class="fas fa-check"></i> Fully equipped kitchen</li>
-        <li><i class="fas fa-check"></i> Daily cleaning service</li>
-        <li><i class="fas fa-check"></i> Complimentary breakfast</li>
-        <li><i class="fas fa-check"></i> Gym access</li>
-        <li><i class="fas fa-check"></i> 24-hour reception</li>
-      </ul>
-    </section>
-
- <section id="contact">
-  <h2>Contact Us</h2>
-</section>
-      
-<form action="https://formspree.io/f/your-form-id" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="_replyto" required>
-  
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-  
-  <button type="submit">Send</button>
-</form>
-
-      
-    </main>
-    <footer>
-  </body>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 
+		<a href="#">Min hemsida</a> - All Rights Reserved.</p>
+	</footer>
+</body>
 </html>
