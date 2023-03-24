@@ -88,3 +88,8 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
